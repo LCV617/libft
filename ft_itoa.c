@@ -6,7 +6,7 @@
 /*   By: ewaltz <ewaltz@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/13 11:57:38 by ewaltz            #+#    #+#             */
-/*   Updated: 2025/11/13 13:58:32 by ewaltz           ###   ########.fr       */
+/*   Updated: 2025/11/13 14:43:29 by ewaltz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,49 +14,54 @@
 #include <stddef.h>
 #include <stdlib.h>
 
-size_t ft_intlen(int a)
+static size_t ft_intlen(long n)
 {
-  size_t result;
+    size_t len = 0;
 
-  result = 0;
-  if(a < 0)
-  {
-    result++;
-    a = a * -1;
-  }
-  if (a == 0)
-    result++;
-  while(a != 0)
-  {
-    a = a / 10;
-    result++;
-  }
-  return(result);
+    if (n <= 0)     {
+        len++;
+        n = -n;
+    }
+    while (n != 0)
+    {
+        n /= 10;
+        len++;
+    }
+    return len;
 }
 
 char *ft_itoa(int n)
 {
+    long   nbr = n;
+    size_t len = ft_intlen(nbr);
+    char  *result = malloc(sizeof(char) * (len + 1));
 
-  char* result;
-  int len;
-  int i;
-  long nbr;
-
-  nbr = n;
-  result = malloc(sizeof(char) * ft_intlen(n));
-  if(!result)
-    return(NULL);
-  while(n != 0)
-  {
-    result[i] = ((nbr % 10) + 48);
-    nbr = nbr / 10;
-    i--;
-  }
-  return(result);
+    if (!result)
+        return NULL;
+    result[len] = '\0';
+    if (nbr == 0)
+    {
+        result[0] = '0';
+        return result;
+    }
+    if (nbr < 0)
+    {
+        result[0] = '-';
+        nbr = -nbr;
+    }
+    while (nbr != 0)
+    {
+        result[--len] = (nbr % 10) + '0';
+        nbr /= 10;
+    }
+    return result;
 }
 
 
-int main()
+int main(void)
 {
-  printf("%s", ft_itoa(55));
+    char *s = ft_itoa(55);
+    printf("%s\n", s);
+    free(s);
 }
+
