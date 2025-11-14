@@ -6,11 +6,13 @@
 /*   By: ewaltz <ewaltz@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/14 16:45:27 by ewaltz            #+#    #+#             */
-/*   Updated: 2025/11/14 17:04:20 by ewaltz           ###   ########.fr       */
+/*   Updated: 2025/11/14 17:21:51 by ewaltz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
+
+size_t ft_strlen(char *s);
 
 char fu(unsigned int i, char c)
 {
@@ -33,6 +35,7 @@ char *ft_strmapi(const char *s, char (*f)(unsigned int, char))
   }
   return(dest);
 }
+
 
 
 int main()
