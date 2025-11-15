@@ -1,6 +1,6 @@
 NAME = libft.a
 
-ALL_SRC = \
+SRCS = \
 	ft_atoi.c \
 	ft_bzero.c \
 	ft_calloc.c \
@@ -36,9 +36,6 @@ ALL_SRC = \
 	ft_tolower.c \
 	ft_toupper.c
 
-DISABLED_LIST_FILE ?= .disabled
-FILE_DISABLED := $(strip $(shell cat $(DISABLED_LIST_FILE) 2>/dev/null))
-SRC = $(filter-out $(DISABLED) $(FILE_DISABLED), $(ALL_SRC))
 
 CC = cc
 
