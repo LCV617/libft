@@ -1,15 +1,21 @@
-int   ft_strlen(char* str)
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ewaltz <ewaltz@student.42lyon.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/11/17 16:03:41 by ewaltz            #+#    #+#             */
+/*   Updated: 2025/11/17 16:05:00 by ewaltz           ###   ########lyon.fr   */
+/*                                                                            */
+/* ************************************************************************** */
+
+int	ft_strlen(char *str)
 {
-  int   i;
+	int	i;
 
-  i = 0;
-  while(str[i])
-    i++;
-  return(i);
+	i = 0;
+	while (str[i])
+		i++;
+	return (i);
 }
-
-//#include <stdio.h>
-//int   main(void)
-//{
-//  printf("%i", ft_strlen(""));
-//}

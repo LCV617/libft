@@ -1,35 +1,43 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ewaltz <ewaltz@student.42lyon.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/11/17 13:51:13 by ewaltz            #+#    #+#             */
+/*   Updated: 2025/11/17 13:56:15 by ewaltz           ###   ########lyon.fr   */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include <stddef.h>
 
-char *strchr(const char *s, int c)
+char	*strchr(const char *s, int c)
 {
-  int i;
-  char cc;
+	char	cc;
+	int		i;
 
-  cc = (char)c;
-
-  i = 0;
-  while(s[i])
-  {
-    if(s[i] == cc)
-      return((char *) &s[i]);
-    i++;
-  }
-  if (s[i] == cc)
-        return ((char *) &s[i]);
-
-  return(NULL);
+	cc = (char)c;
+	i = 0;
+	while (s[i])
+	{
+		if (s[i] == cc)
+			return ((char *) &s[i]);
+		i++;
+	}
+	if (s[i] == cc)
+		return ((char *) &s[i]);
+	return (NULL);
 }
 
-
-#include <stdio.h>
-
-int main(void)
-{
-    const char *str = "Hello World";
-    char *res;
-
-    res = strchr(str, 'o');
-    printf("Test 1: %s\n", res);
-    return 0;
-}
+//#include <stdio.h>
+//
+//int main(void)
+//{
+//    const char *str = "Hello World";
+//    char *res;
+//
+//    res = strchr(str, 'o');
+//    printf("Test 1: %s\n", res);
+//    return 0;
+//}

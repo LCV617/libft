@@ -1,35 +1,31 @@
-#include <stddef.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ewaltz <ewaltz@student.42lyon.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/11/17 16:13:04 by ewaltz            #+#    #+#             */
+/*   Updated: 2025/11/17 16:14:56 by ewaltz           ###   ########lyon.fr   */
+/*                                                                            */
+/* ************************************************************************** */
 
-char *strchr(const char *s, int c)
+char	*strchr(const char *s, int c)
 {
-  int i;
-  char cc;
-  char* res;
+	int		i;
+	char	cc;
+	char	*res;
 
-  cc = (char)c;
-  res = NULL;
-  i = 0;
-  while(s[i])
-  {
-    if(s[i] == cc)
-      res = ((char *) &s[i]);
-    i++;
-  }
-  if (s[i] == cc)
-        res = ((char *) &s[i]);
-
-  return(res);
-}
-
-
-#include <stdio.h>
-
-int main(void)
-{
-    const char *str = "Hello World";
-    char *res;
-
-    res = strchr(str, 'o');
-    printf("Test 1: %s\n", res);
-    return 0;
+	cc = (char)c;
+	res = NULL;
+	i = 0;
+	while (s[i])
+	{
+		if (s[i] == cc)
+			res = ((char *) &s[i]);
+		i++;
+	}
+	if (s[i] == cc)
+		res = ((char *) &s[i]);
+	return (res);
 }
