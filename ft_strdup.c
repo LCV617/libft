@@ -6,7 +6,7 @@
 /*   By: ewaltz <ewaltz@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/17 15:50:58 by ewaltz            #+#    #+#             */
-/*   Updated: 2025/11/18 11:18:43 by ewaltz           ###   ########lyon.fr   */
+/*   Updated: 2025/11/18 14:02:41 by ewaltz           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,9 @@ char	*ft_strdup(const char *str)
 	char	*dest;
 
 	i = 0;
-	dest = malloc(sizeof(char) * ft_strlen(str));
+	dest = malloc(sizeof(char) * ft_strlen(str) + 1);
+	if(!dest)
+		return (NULL);
 	while (str[i])
 	{
 		dest[i] = str[i];

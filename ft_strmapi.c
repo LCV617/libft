@@ -6,7 +6,7 @@
 /*   By: ewaltz <ewaltz@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/14 16:45:27 by ewaltz            #+#    #+#             */
-/*   Updated: 2025/11/17 16:07:01 by ewaltz           ###   ########lyon.fr   */
+/*   Updated: 2025/11/18 14:35:45 by ewaltz           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,5 +26,6 @@ char	*ft_strmapi(const char *s, char (*f)(unsigned int, char))
 		dest[i] = (*f)(i, s[i]);
 		i++;
 	}
+	dest[i] = '\0';
 	return (dest);
 }

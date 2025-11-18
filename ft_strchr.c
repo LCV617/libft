@@ -6,13 +6,13 @@
 /*   By: ewaltz <ewaltz@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/17 13:51:13 by ewaltz            #+#    #+#             */
-/*   Updated: 2025/11/18 10:56:22 by ewaltz           ###   ########lyon.fr   */
+/*   Updated: 2025/11/18 13:23:55 by ewaltz           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*strchr(const char *s, int c)
+char	*ft_strchr(const char *s, int c)
 {
 	char	cc;
 	int		i;
