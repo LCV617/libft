@@ -1,6 +1,6 @@
 NAME = libft.a
 
-SRCS = \
+SRC = \
 	ft_atoi.c \
 	ft_bzero.c \
 	ft_calloc.c \
@@ -41,7 +41,7 @@ CC = cc
 
 CFLAGS = -Wall -Werror -Wextra
 
-OBJ := $(SRC:%.c=%.o)
+OBJ = $(SRC:.c=.o)
 
 all: $(NAME)
 

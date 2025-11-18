@@ -6,11 +6,11 @@
 /*   By: ewaltz <ewaltz@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/15 10:31:40 by ewaltz            #+#    #+#             */
-/*   Updated: 2025/11/17 16:19:25 by ewaltz           ###   ########lyon.fr   */
+/*   Updated: 2025/11/18 11:39:56 by ewaltz           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 int	trim(const char *set, char c)
 {
@@ -26,7 +26,7 @@ int	trim(const char *set, char c)
 	return (0);
 }
 
-char	*new_str(char *s1, size_t start, size_t len)
+char	*new_str(const char *s1, size_t start, size_t len)
 {
 	char	*str;
 	size_t	i;
@@ -45,7 +45,7 @@ char	*new_str(char *s1, size_t start, size_t len)
 	return (str);
 }
 
-char	*ft_strtrim(const char *s1,)
+char	*ft_strtrim(char const *s1, char const *set)
 {
 	int	i;
 	int	j;

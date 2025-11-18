@@ -1,10 +1,24 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ewaltz <ewaltz@student.42lyon.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/11/18 10:54:31 by ewaltz            #+#    #+#             */
+/*   Updated: 2025/11/18 11:28:24 by ewaltz           ###   ########lyon.fr   */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
     size_t    src_len;
     size_t    dst_len;
-    
+
+    src_len = ft_strlen(src);
+    dst_len = ft_strlen(dst);
    if (dst_len >= dstsize)
         dst_len = dstsize;
    if (dst_len == dstsize)

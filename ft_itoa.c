@@ -6,9 +6,11 @@
 /*   By: ewaltz <ewaltz@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/13 11:57:38 by ewaltz            #+#    #+#             */
-/*   Updated: 2025/11/17 14:57:13 by ewaltz           ###   ########lyon.fr   */
+/*   Updated: 2025/11/18 11:18:17 by ewaltz           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 static size_t	ft_intlen(long n)
 {
@@ -32,7 +34,7 @@ char	*ft_itoa(int n)
 {
 	long	nbr;
 	size_t	len;
-	char	*result
+	char	*result;
 
 	nbr = n;
 	len = ft_intlen(nbr);

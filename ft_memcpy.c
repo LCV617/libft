@@ -6,9 +6,11 @@
 /*   By: ewaltz <ewaltz@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/12 14:47:13 by ewaltz            #+#    #+#             */
-/*   Updated: 2025/11/17 15:19:22 by ewaltz           ###   ########lyon.fr   */
+/*   Updated: 2025/11/18 10:51:46 by ewaltz           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {

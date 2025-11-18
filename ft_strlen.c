@@ -6,13 +6,15 @@
 /*   By: ewaltz <ewaltz@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/17 16:03:41 by ewaltz            #+#    #+#             */
-/*   Updated: 2025/11/17 16:05:00 by ewaltz           ###   ########lyon.fr   */
+/*   Updated: 2025/11/18 11:25:48 by ewaltz           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(char *str)
+#include "libft.h"
+
+size_t	ft_strlen(const char *str)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
 	while (str[i])

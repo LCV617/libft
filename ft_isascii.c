@@ -6,9 +6,11 @@
 /*   By: ewaltz <ewaltz@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/17 14:35:13 by ewaltz            #+#    #+#             */
-/*   Updated: 2025/11/17 14:36:04 by ewaltz           ###   ########lyon.fr   */
+/*   Updated: 2025/11/18 10:47:55 by ewaltz           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isascii(int c)
 {

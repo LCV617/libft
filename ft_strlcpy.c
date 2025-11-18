@@ -6,9 +6,11 @@
 /*   By: ewaltz <ewaltz@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/17 16:01:48 by ewaltz            #+#    #+#             */
-/*   Updated: 2025/11/17 16:03:19 by ewaltz           ###   ########lyon.fr   */
+/*   Updated: 2025/11/18 10:54:24 by ewaltz           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {

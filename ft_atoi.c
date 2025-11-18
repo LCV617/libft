@@ -6,9 +6,11 @@
 /*   By: ewaltz <ewaltz@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/11 11:30:07 by ewaltz            #+#    #+#             */
-/*   Updated: 2025/11/17 16:24:12 by ewaltz           ###   ########lyon.fr   */
+/*   Updated: 2025/11/18 11:01:06 by ewaltz           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_atoi(const char *str)
 {

@@ -6,9 +6,11 @@
 /*   By: ewaltz <ewaltz@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/17 16:13:04 by ewaltz            #+#    #+#             */
-/*   Updated: 2025/11/17 16:14:56 by ewaltz           ###   ########lyon.fr   */
+/*   Updated: 2025/11/18 10:56:51 by ewaltz           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char	*strchr(const char *s, int c)
 {

@@ -6,13 +6,15 @@
 /*   By: ewaltz <ewaltz@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/13 11:38:04 by ewaltz            #+#    #+#             */
-/*   Updated: 2025/11/17 16:08:40 by ewaltz           ###   ########lyon.fr   */
+/*   Updated: 2025/11/18 11:30:09 by ewaltz           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strncmp(char *str1, char *str2, int n)
+#include "libft.h"
+
+int	ft_strncmp(const char *str1,const char *str2, size_t n)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
 	while ((str1[i] || str2[i]) && (i < n))
