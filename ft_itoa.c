@@ -6,7 +6,7 @@
 /*   By: ewaltz <ewaltz@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/13 11:57:38 by ewaltz            #+#    #+#             */
-/*   Updated: 2025/11/19 10:32:57 by ewaltz           ###   ########lyon.fr   */
+/*   Updated: 2025/11/19 10:56:24 by ewaltz           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,16 @@ static size_t	ft_intlen(long n)
 		len++;
 	}
 	return (len);
+}
+
+char	*copy(char *result, size_t len, long nbr)
+{
+	while (nbr != 0)
+	{
+		result[--len] = (nbr % 10) + '0';
+		nbr /= 10;
+	}
+	return (result);
 }
 
 char	*ft_itoa(int n)
@@ -52,12 +62,7 @@ char	*ft_itoa(int n)
 		result[0] = '-';
 		nbr = -nbr;
 	}
-	while (nbr != 0)
-	{
-		result[--len] = (nbr % 10) + '0';
-		nbr /= 10;
-	}
-	return (result);
+	return (copy(result, len, nbr));
 }
 
 //int main(void)
