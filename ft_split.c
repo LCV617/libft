@@ -6,7 +6,7 @@
 /*   By: ewaltz <ewaltz@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/18 11:08:40 by ewaltz            #+#    #+#             */
-/*   Updated: 2025/11/19 11:26:03 by ewaltz           ###   ########lyon.fr   */
+/*   Updated: 2025/11/19 14:20:45 by ewaltz           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,18 +58,12 @@ static void	ft_free_all(char **tab, size_t i)
 	free(tab);
 }
 
-char	**ft_split(char const *s, char c)
+char	**fill_tab(char **tab, char const *s, char c)
 {
-	char	**tab;
 	size_t	i;
 	size_t	j;
 	size_t	start;
 
-	if (!s)
-		return (NULL);
-	tab = (char **)malloc(sizeof(char *) * (ft_word_count(s, c) + 1));
-	if (!tab)
-		return (NULL);
 	i = 0;
 	j = 0;
 	while (s[i])
@@ -89,4 +83,16 @@ char	**ft_split(char const *s, char c)
 	}
 	tab[j] = NULL;
 	return (tab);
+}
+
+char	**ft_split(char const *s, char c)
+{
+	char	**tab;
+
+	if (!s)
+		return (NULL);
+	tab = (char **)malloc(sizeof(char *) * (ft_word_count(s, c) + 1));
+	if (!tab)
+		return (NULL);
+	return (fill_tab(tab, s, c));
 }

@@ -6,7 +6,7 @@
 /*   By: ewaltz <ewaltz@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/19 10:05:12 by ewaltz            #+#    #+#             */
-/*   Updated: 2025/11/19 10:13:35 by ewaltz           ###   ########lyon.fr   */
+/*   Updated: 2025/11/19 14:41:42 by ewaltz           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <unistd.h>
 # include <stdlib.h>
 # include <stddef.h>
+# include <stdint.h>
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);

@@ -6,7 +6,7 @@
 /*   By: ewaltz <ewaltz@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/17 13:30:53 by ewaltz            #+#    #+#             */
-/*   Updated: 2025/11/18 11:01:42 by ewaltz           ###   ########lyon.fr   */
+/*   Updated: 2025/11/19 14:47:28 by ewaltz           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ void	*ft_calloc(size_t count, size_t size)
 	size_t			i;
 
 	i = 0;
+	if (size != 0 && count > SIZE_MAX / size)
+		return (NULL);
 	tmp = malloc(count * size);
 	if (!tmp)
 		return (NULL);
