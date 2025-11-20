@@ -48,8 +48,8 @@ all: $(NAME)
 $(NAME): $(OBJ)
 	ar rcs $@ $^
 
-%.o: %.c
-	$(CC) $(CFLAGS) -c $^ -o $@
+%.o: %.c libft.h
+	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
 	rm -f $(OBJ)

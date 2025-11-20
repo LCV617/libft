@@ -6,7 +6,7 @@
 /*   By: ewaltz <ewaltz@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/11 11:30:07 by ewaltz            #+#    #+#             */
-/*   Updated: 2025/11/18 14:27:15 by ewaltz           ###   ########lyon.fr   */
+/*   Updated: 2025/11/19 17:11:16 by ewaltz           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,3 +35,12 @@ int	ft_atoi(const char *str)
 	nbr = nbr * neg;
 	return (nbr);
 }
+
+/* #include <stdio.h>
+int	main(void)
+{
+	char *i = "   \n -56";
+	printf("%d\n", atoi(i));
+	printf("%d\n", ft_atoi(i));
+	return (0);
+} */
