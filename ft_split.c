@@ -6,7 +6,7 @@
 /*   By: ewaltz <ewaltz@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/18 11:08:40 by ewaltz            #+#    #+#             */
-/*   Updated: 2025/11/19 14:20:45 by ewaltz           ###   ########lyon.fr   */
+/*   Updated: 2025/11/21 09:23:56 by ewaltz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,7 @@ static void	ft_free_all(char **tab, size_t i)
 	free(tab);
 }
 
-char	**fill_tab(char **tab, char const *s, char c)
+static char	**fill_tab(char **tab, char const *s, char c)
 {
 	size_t	i;
 	size_t	j;

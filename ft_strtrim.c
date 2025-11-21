@@ -6,13 +6,13 @@
 /*   By: ewaltz <ewaltz@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/15 10:31:40 by ewaltz            #+#    #+#             */
-/*   Updated: 2025/11/18 11:39:56 by ewaltz           ###   ########lyon.fr   */
+/*   Updated: 2025/11/21 09:22:28 by ewaltz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	trim(const char *set, char c)
+static int	trim(const char *set, char c)
 {
 	int	i;
 
@@ -26,7 +26,7 @@ int	trim(const char *set, char c)
 	return (0);
 }
 
-char	*new_str(const char *s1, size_t start, size_t len)
+static char	*new_str(const char *s1, size_t start, size_t len)
 {
 	char	*str;
 	size_t	i;

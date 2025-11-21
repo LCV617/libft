@@ -6,7 +6,7 @@
 /*   By: ewaltz <ewaltz@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/13 11:57:38 by ewaltz            #+#    #+#             */
-/*   Updated: 2025/11/19 10:56:24 by ewaltz           ###   ########lyon.fr   */
+/*   Updated: 2025/11/21 09:24:58 by ewaltz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ static size_t	ft_intlen(long n)
 	return (len);
 }
 
-char	*copy(char *result, size_t len, long nbr)
+static char	*copy(char *result, size_t len, long nbr)
 {
 	while (nbr != 0)
 	{
