@@ -48,12 +48,17 @@ static char	*ft_word_dup(char const *s, size_t start, size_t end)
 	return (str);
 }
 
-static void	ft_free_all(char **tab, size_t i)
+static void	ft_free_all(char **tab)
 {
-	while (i > 0)
+	int	i;
+
+	i = 0;
+	if (!tab)
+		return ;
+	while (tab[i])
 	{
-		i--;
 		free(tab[i]);
+		i++;
 	}
 	free(tab);
 }
@@ -77,7 +82,7 @@ static char	**fill_tab(char **tab, char const *s, char c)
 		{
 			tab[j] = ft_word_dup(s, start, i);
 			if (!tab[j])
-				return (ft_free_all(tab, j), NULL);
+				return (ft_free_all(tab), NULL);
 			j++;
 		}
 	}
@@ -96,3 +101,20 @@ char	**ft_split(char const *s, char c)
 		return (NULL);
 	return (fill_tab(tab, s, c));
 }
+
+// int		main(void)
+// {
+// 	char	**test;
+// 	int		i;
+
+// 	i = 0;
+// 	printf(" %d", ft_word_count("ok cecie est un test", ' '));
+// 	test = ft_split("ok cecie est un test", ' ');
+// 	// while (test[i])
+// 	// {
+// 	// 	printf("%s\n", test[i]);
+// 	// 	i++;
+// 	// }
+// 	// ft_free_all(test);
+
+// }
