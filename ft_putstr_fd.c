@@ -6,7 +6,7 @@
 /*   By: ewaltz <ewaltz@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/17 15:50:13 by ewaltz            #+#    #+#             */
-/*   Updated: 2025/11/17 15:50:16 by ewaltz           ###   ########lyon.fr   */
+/*   Updated: 2025/11/24 14:18:22 by ewaltz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	ft_putstr_fd(char *s, int fd)
 {
 	size_t	i;
 
-	if (!s)
+	if (!s || fd < 0)
 		return ;
 	i = 0;
 	while (s[i])
